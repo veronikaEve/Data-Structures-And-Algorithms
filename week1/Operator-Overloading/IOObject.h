@@ -2,7 +2,6 @@
 using namespace std;
 
 class IOObject {
-
 public:
 	void DisplayIntLessThan(int n) {
 		--n;

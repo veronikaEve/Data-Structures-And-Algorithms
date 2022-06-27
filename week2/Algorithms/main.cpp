@@ -89,11 +89,11 @@ int main() {
 //	}
 
 // ▶️ Exercise 2 -------------------------------------------------------------------------------------------------------
-	int bigData_length = 1000;
-	int bigData[bigData_length];
-	for(int i=0;i<bigData_length;i++){
-		bigData[i]=rand()%101;
-	}
+//	int bigData_length = 1000;
+//	int bigData[bigData_length];
+//	for(int i=0;i<bigData_length;i++){
+//		bigData[i]=rand()%101;
+//	}
 //
 //	SelectionSort(bigData, bigData_length);
 //
@@ -102,41 +102,41 @@ int main() {
 //	}
 
 // ▶️ Exercise 3 & 4 & 5 -----------------------------------------------------------------------------------------------
-//	int bigData_length = 1000;
-//
-//	for (int seconds_to_execute = 0; seconds_to_execute < 1; bigData_length *= 10 ) {
-//		int bigData[bigData_length];
-//
-//		for(int i=0;i<bigData_length;i++){
-//			bigData[i]=rand()%101;
-//		}
-//
-//		auto start = high_resolution_clock::now();
-//
-////		SelectionSort(bigData, bigData_length); // Exercise 3
-////		BubbleSort(bigData, bigData_length); // Exercise 4 faster than the Enhanced Bubble Sort?????????
-////		EnhancedBubbleSort(bigData, bigData_length); // Exercise 5
-//
-//		auto stop = high_resolution_clock::now();
-//
-//		auto durationSeconds = duration_cast<seconds>(stop - start);
-//		auto durationMilliseconds = duration_cast<milliseconds>(stop - start - durationSeconds);
-//
-//		seconds_to_execute = durationSeconds.count();
-//		int extra_milliseconds = durationMilliseconds.count();
-//
-//		cout << seconds_to_execute << " seconds and " << extra_milliseconds << " milliseconds " << ends;
-//		cout << " to execute an array of length: " << bigData_length << endl;
-//	}
+	int bigData_length = 1000;
+
+	for (int seconds_to_execute = 0; seconds_to_execute < 1; bigData_length *= 10 ) {
+		int bigData[bigData_length];
+
+		for(int i=0;i<bigData_length;i++){
+			bigData[i]=rand()%101;
+		}
+
+		auto start = high_resolution_clock::now();
+
+//		SelectionSort(bigData, bigData_length); // Exercise 3
+//		BubbleSort(bigData, bigData_length); // Exercise 4 faster than the Enhanced Bubble Sort?????????
+//		EnhancedBubbleSort(bigData, bigData_length); // Exercise 5
+
+		auto stop = high_resolution_clock::now();
+
+		auto durationSeconds = duration_cast<seconds>(stop - start);
+		auto durationMilliseconds = duration_cast<milliseconds>(stop - start - durationSeconds);
+
+		seconds_to_execute = durationSeconds.count();
+		int extra_milliseconds = durationMilliseconds.count();
+
+		cout << seconds_to_execute << " seconds and " << extra_milliseconds << " milliseconds " << ends;
+		cout << " to execute an array of length: " << bigData_length << endl;
+	}
 
 // ▶️ Exercise 6 -------------------------------------------------------------------------------------------------------
-	int resultingIndex = SequentialSearch(bigData, 1000, 15);
-	cout << resultingIndex << endl;
+//	int resultingIndex = SequentialSearch(bigData, 1000, 15);
+//	cout << resultingIndex << endl;
 
 // ▶️ Exercise 7 -------------------------------------------------------------------------------------------------------
-	SelectionSort(bigData, bigData_length);
-
-	int resultingIndexAgain = BinarySearch(bigData, 1000, 15);
-	cout << resultingIndexAgain << endl;
+//	SelectionSort(bigData, bigData_length);
+//
+//	int resultingIndexAgain = BinarySearch(bigData, 1000, 15);
+//	cout << resultingIndexAgain << endl;
 
 }

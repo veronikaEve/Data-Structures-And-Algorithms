@@ -1,0 +1,3 @@
+/Users/veronikaeve/Brainjuice/Data-Structures-And-Algorithms/week3/Queues/cmake-build-debug/CMakeFiles/Queues.dir
+/Users/veronikaeve/Brainjuice/Data-Structures-And-Algorithms/week3/Queues/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/veronikaeve/Brainjuice/Data-Structures-And-Algorithms/week3/Queues/cmake-build-debug/CMakeFiles/rebuild_cache.dir
