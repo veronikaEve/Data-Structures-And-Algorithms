@@ -3,4 +3,4 @@ project(Queues)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Queues main.cpp Queue.h PriorityQueue.h)
+add_executable(Queues main.cpp Queue.h PriorityQueue.h GameObject.h)

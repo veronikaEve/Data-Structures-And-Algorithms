@@ -2,47 +2,52 @@
 
 using namespace std;
 
+template<class A>
 class PriorityQueue {
 public:
 	int count;
 	int size;
-	int *data;
+	A **data;
 
 	~PriorityQueue();
-	PriorityQueue(int size);
+	PriorityQueue(int size) : size(size) {
+		count = 0;
+		data = new A*[size];
+	}
 
-	void Insert(int Item);
+	void Insert(A * Item);
 	bool IsEmpty();
 	bool IsFull();
-	int PeakMin();
-	int Remove();
+	A PeakMin();
+	A Remove();
 	int Size();
 };
 
-PriorityQueue::~PriorityQueue() {}
+template<class A>
+PriorityQueue<A>::~PriorityQueue() {}
 
-PriorityQueue::PriorityQueue(int size) : size(size) {
-	count = 0;
-	data = new int[size];
-}
-
-int PriorityQueue::PeakMin() {
+template<class A>
+A PriorityQueue<A>::PeakMin() {
 	return data[count-1];
 }
 
-bool PriorityQueue::IsEmpty() {
+template<class A>
+bool PriorityQueue<A>::IsEmpty() {
 	return count == 0;
 }
 
-bool PriorityQueue::IsFull() {
+template<class A>
+bool PriorityQueue<A>::IsFull() {
 	return  count == size;
 }
 
-int PriorityQueue::Size() {
+template<class A>
+int PriorityQueue<A>::Size() {
 	return sizeof(*data);
 }
 
-void PriorityQueue::Insert(int Item) {
+template<class A>
+void PriorityQueue<A>::Insert(A *Item) {
 	if (IsEmpty()) {
 		data[0] = Item;
 		count++;
@@ -61,8 +66,9 @@ void PriorityQueue::Insert(int Item) {
 	}
 }
 
-int PriorityQueue::Remove() {
-	int itemToRemove = data[count-1];
+template<class A>
+A PriorityQueue<A>::Remove() {
+	A * itemToRemove = data[count-1];
 	count--;
-	return itemToRemove;
+	return *itemToRemove;
 }

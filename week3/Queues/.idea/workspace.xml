@@ -17,9 +17,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e24cc57-6bc5-4e60-a3f5-d0e9e61f7aa2" name="Changes" comment="week3 - Queue">
+    <list default="true" id="2e24cc57-6bc5-4e60-a3f5-d0e9e61f7aa2" name="Changes" comment="week3 - PriorityQueue up to e5">
+      <change afterPath="$PROJECT_DIR$/GameObject.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PriorityQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/PriorityQueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b3a0ddc5358f134531e2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-06-25T20-09-44-0843.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Queues-Debug-f9f2fb65f8733c77a0af.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Queues.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Queues.dir/main.cpp.o" afterDir="false" />
@@ -75,6 +81,11 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Queues" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Queues" TARGET_NAME="Queues" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Queues" RUN_TARGET_NAME="Queues">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -92,7 +103,7 @@
       <workItem from="1655456251173" duration="5516000" />
       <workItem from="1655998485166" duration="10558000" />
       <workItem from="1656323888275" duration="6032000" />
-      <workItem from="1656620570046" duration="815000" />
+      <workItem from="1656620570046" duration="11464000" />
     </task>
     <task id="LOCAL-00001" summary="week3 - Queue">
       <created>1656324000369</created>
@@ -101,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656324000369</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="week3 - PriorityQueue up to e5">
+      <created>1656621891971</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656621891971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="week3 - Queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="week3 - Queue" />
+    <MESSAGE value="week3 - PriorityQueue up to e5" />
+    <option name="LAST_COMMIT_MESSAGE" value="week3 - PriorityQueue up to e5" />
   </component>
 </project>

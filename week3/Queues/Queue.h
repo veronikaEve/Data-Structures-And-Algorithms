@@ -56,8 +56,8 @@ void Queue::Insert(int Item) {
 }
 
 int Queue::Remove() {
-	int itemToRemove = data[front++]; // why is data[front++] recommended here?
-//	front++; why not have data[front], and increment after. How does it even work lol
+	int itemToRemove = data[front];
+	front+=1;
 	if (front == size) {
 		front = 0;
 	}
