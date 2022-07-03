@@ -7,8 +7,11 @@ class LinkedList {
 public:
 	Link *first;
 	LinkedList();
+
 	bool IsEmpty();
-	void Insert(Link *newLink); void Display();
+	void Insert(Link *newLink);
+	void Display();
+	Link * Find(int key);
 };
 
 LinkedList::LinkedList() {
@@ -31,4 +34,18 @@ void LinkedList::Display() {
 		current->Display();
 		current = current->next;
 	}
+}
+
+Link * LinkedList::Find(int key) {
+	Link *current = first;
+
+	while (current->data != key) {
+		if (current->next == 0)
+			return 0;
+		else
+			current = current->next;
+	}
+
+	current->Display();
+	return current;
 }

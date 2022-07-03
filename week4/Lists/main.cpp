@@ -12,6 +12,10 @@ int main() {
 	newLinkedList.Insert(new Link(2));
 	newLinkedList.Insert(new Link(17));
 
-	newLinkedList.Display();
+//	Exercise 2
+//	newLinkedList.Display();
+
+//  Exercise 3
+	newLinkedList.Find(4);
 
 }
