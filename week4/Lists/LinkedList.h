@@ -13,6 +13,7 @@ public:
 	void Display();
 	Link * Find(int key);
 	Link * Delete(int key);
+	void DeleteFirst();
 
 };
 
@@ -72,3 +73,6 @@ Link * LinkedList::Delete(int key) {
 	return current;
 }
 
+void LinkedList::DeleteFirst() {
+	first = first->next;
+}
