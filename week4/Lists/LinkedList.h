@@ -12,6 +12,8 @@ public:
 	void Insert(Link *newLink);
 	void Display();
 	Link * Find(int key);
+	Link * Delete(int key);
+
 };
 
 LinkedList::LinkedList() {
@@ -49,3 +51,24 @@ Link * LinkedList::Find(int key) {
 	current->Display();
 	return current;
 }
+
+Link * LinkedList::Delete(int key) {
+	Link *current = first;
+	Link *previous = first;
+
+	while (current->data != key) {
+		if (current->next == 0)
+			return 0;
+		else
+			previous = current;
+			current = current->next;
+	}
+
+	if (current == first)
+		first = first->next;
+	else
+		previous->next = current->next;
+
+	return current;
+}
+

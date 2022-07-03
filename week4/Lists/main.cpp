@@ -19,8 +19,15 @@ int main() {
 //	newLinkedList.Find(4);
 
 //	Exercise 4
-	Link *linkToFind = newLinkedList.Find(9);
-	if (linkToFind == 0)
+//	Link *linkToFind = newLinkedList.Find(9);
+//	if (linkToFind == 0)
+//		cout << "the requested Link could not be found" << endl;
+
+//	Exercise 5, 6
+	Link *linkToDelete = newLinkedList.Delete(4);
+	if (linkToDelete == 0)
 		cout << "the requested Link could not be found" << endl;
+
+	newLinkedList.Display();
 
 }
