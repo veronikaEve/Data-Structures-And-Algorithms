@@ -17,18 +17,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc820889-23a0-40db-9b49-8034b883aa01" name="Changes" comment="week 5 - e1">
-      <change afterPath="$PROJECT_DIR$/Stack2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-905c07b1a0aad37318a2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-10T17-06-58-0611.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Stacks-Debug-ffd73e21b909cfc367cb.json" afterDir="false" />
+    <list default="true" id="fc820889-23a0-40db-9b49-8034b883aa01" name="Changes" comment="week 5 - e2">
+      <change afterPath="$PROJECT_DIR$/Link.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedStack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-346bd9446a80a949e6ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-12T19-56-55-0744.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Stacks-Debug-874b0e6602088155222c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-396f582fcf4dc379db35.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-10T16-31-46-0891.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Stacks-Debug-a7b185097f801582452c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-905c07b1a0aad37318a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-10T17-06-58-0611.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Stacks-Debug-ffd73e21b909cfc367cb.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Stacks.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Stacks.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Stacks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Stacks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -67,6 +71,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/veronikaeve/Brainjuice/Data-Structures-And-Algorithms/week5/Stacks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +79,11 @@
     "settings.editor.selected.configurable": "fileTemplates"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -94,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657470642678</updated>
-      <workItem from="1657470644769" duration="3251000" />
+      <workItem from="1657470644769" duration="6909000" />
     </task>
     <task id="LOCAL-00001" summary="week 5 - e1">
       <created>1657472237583</created>
@@ -103,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657472237583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="week 5 - e2">
+      <created>1657474225144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657474225144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="week 5 - e1" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 5 - e1" />
+    <MESSAGE value="week 5 - e2" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 5 - e2" />
   </component>
 </project>
