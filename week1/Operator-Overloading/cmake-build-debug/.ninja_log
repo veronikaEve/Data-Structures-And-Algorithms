@@ -1,6 +1,0 @@
-# ninja log v5
-315	354	1654863941409530120	Operator_Overloading	2767db4f5ccb7050
-1	315	1654863941368558344	CMakeFiles/Operator_Overloading.dir/main.cpp.o	ae63ee925bf32714
-2	21	1654807142251669512	CMakeFiles/Operator_Overloading.dir/Weapon.cpp.o	43d18d21af97dd9f
-0	42	1655230244193812520	build.ninja	815cfe8010e88ee1
-2	26	1654807041878130228	CMakeFiles/Operator_Overloading.dir/Entity.cpp.o	e2c4db7f50e6b00
