@@ -10,8 +10,9 @@ public:
 	Tree();
 
 	Node *Find(int key);
-
 	void DisplayInOrder(Node *localRoot);
+
+	void Insert(int data);
 };
 
 Tree::Tree() {
@@ -39,6 +40,33 @@ void Tree::DisplayInOrder(Node *localRoot) {
 		DisplayInOrder(localRoot->leftChild);
 		localRoot->Display();
 		DisplayInOrder(localRoot->rightChild);
+	}
+}
+
+void Tree::Insert(int data) {
+	Node *newNode = new Node(data);
+	if (root == 0) {
+		root = newNode;
+	} else {
+		Node *current;
+		current = root;
+		Node *parent;
+		while (true) {
+			parent = current;
+			if (data < current->data) {
+				current = current->leftChild;
+				if (current == 0) {
+					parent->leftChild = newNode;
+					return;
+				}
+			} else {
+				current = current->rightChild;
+				if (current == 0) {
+					parent->rightChild = newNode;
+					return;
+				}
+			}
+		}
 	}
 }
 
