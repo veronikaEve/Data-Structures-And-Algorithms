@@ -25,14 +25,14 @@ public:
 	};
 
 	int HashFunction(int key){
-		return key % size;
+		return key % size; // % = modulus which returns the remainder after a division
 	};
 
 	void Insert(GameObject* item){
 		int key = item->key;
 		int hash = HashFunction(key);
 		while (data[hash] != NULL){
-			++hash;
+			++hash; // why does this need to increment before use, it seems to work with hash++ too
 			hash %= size;
 		}
 		data[hash] = item;
