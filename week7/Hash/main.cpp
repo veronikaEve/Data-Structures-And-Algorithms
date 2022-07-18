@@ -18,4 +18,9 @@ int main() {
 
 //	Exercise 2
 	cout << table->Find(30)->name << endl;
+
+//	Exercise 3
+	table->Delete(30);
+	table->Display();
+
 }

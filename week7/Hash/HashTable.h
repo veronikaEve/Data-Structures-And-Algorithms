@@ -49,4 +49,18 @@ public:
 		}
 		return NULL;
 	}
+
+	GameObject * Delete(int key) {
+		int hash = HashFunction(key);
+		while (data[hash] != NULL) {
+			if (data[hash]->key == key) {
+				GameObject *temp = data[hash];
+				data[hash] = NULL;
+				return temp;
+			}
+			hash++;
+			hash = hash % size;
+		}
+		return NULL;
+	}
 };
