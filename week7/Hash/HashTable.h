@@ -38,4 +38,15 @@ public:
 		data[hash] = item;
 	};
 
+	GameObject * Find(int key){
+		int hash = HashFunction(key);
+		while (data[hash] != NULL){
+			if (data[hash]->key == key){
+				return data[hash];
+			}
+			hash++;
+			hash = hash % size;
+		}
+		return NULL;
+	}
 };

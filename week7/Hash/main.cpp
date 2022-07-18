@@ -15,4 +15,7 @@ int main() {
 	// this is: Open Addressing - Linear Probing
 
 	table->Display();
+
+//	Exercise 2
+	cout << table->Find(30)->name << endl;
 }
