@@ -3,4 +3,4 @@ project(Hash)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Hash main.cpp GameObject.h HashTable.h)
+add_executable(Hash main.cpp GameObject.h HashTable.h HashTableStr.h GameObjectStr.h)
