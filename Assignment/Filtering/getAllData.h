@@ -1,15 +1,18 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
+#include "common.h"
 
-using namespace std;
+void displayData(vector<vector<string>> dataSet){
+	for(int row=0;row<dataSet.size();row++) {
+		for(int column=0;column<dataSet[row].size();column++) {
+			cout << dataSet[row][column];
+		}
+		cout << "\n";
+	}
+}
 
 // getAllData is making the whole data file readable by c++, which means our algorithm has a Quadratic Time Complexity already
 // could we improve this to search during the readability conversion?
 // DATA SORTED ALPHABETICALLY
-vector<vector<string>> getAllData(string fileName) {
+void getAllData(string fileName) {
 	vector<vector<string>> dataSet;
 	vector<string> row;
 	string line, word;
@@ -28,5 +31,5 @@ vector<vector<string>> getAllData(string fileName) {
 		cout<<"Could not open the file" << endl;
 	}
 
-	return dataSet;
+	displayData(dataSet);
 }

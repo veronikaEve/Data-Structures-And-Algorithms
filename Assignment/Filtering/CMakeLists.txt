@@ -3,4 +3,4 @@ project(Filtering)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Filtering main.cpp utils.h)
+add_executable(Filtering main.cpp getAllData.h getData.h common.h)
