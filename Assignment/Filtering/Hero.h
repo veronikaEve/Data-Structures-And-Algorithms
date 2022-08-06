@@ -32,17 +32,17 @@ public:
 	}
 
 	void Display() {
-		cout <<
-		this->name << " " <<
-		this->gender << " " <<
-		this->eyeColour << " " <<
-		this->race << " " <<
-		this->hairColour << " " <<
-		this->height << " " <<
-		this->publisher << " " <<
-		this->skinColour << " " <<
-		this->alignment << " " <<
-		this->weight <<
+		cout
+		<< "Name: " << this->name << " | "
+		<< "Gender: " << this->gender << " | "
+		<< "Eye colour: " <<	this->eyeColour << " | "
+		<< "Race: " << this->race << " | "
+		<< "Hair colour: " << this->hairColour << " | "
+		<< "Height: " << this->height << " | "
+		<< "Publisher: " << this->publisher << " | "
+		<< "Skin colour: " << this->skinColour << " | "
+		<< "Alignment: " << this->alignment << " | "
+		<< "Weight: " << this->weight <<
 		endl;
 	}
 };

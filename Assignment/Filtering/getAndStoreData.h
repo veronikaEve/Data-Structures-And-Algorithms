@@ -13,7 +13,8 @@ void getAndStoreData(HeroList *heroList, string fileName) {
 			while(getline(str, word, ',')) {
 				row.push_back(word);
 			}
-		heroList->Insert(new Hero(row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10]));
+			heroList->Insert(new Hero(row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10]));
+			heroList->size++;
 		}
 	}
 	else {
