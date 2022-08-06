@@ -35,7 +35,7 @@ Hero *mergeSortedList(Hero* left, Hero* right) {
 		return left;
 
 	// Compare values and calls itself with the next set of values. Recursive strategy
-	if (left->height <= right->height) {
+	if (left->getAttribute() <= right->getAttribute()) {
 		result = left;
 		result->next = mergeSortedList(left->next, right);
 	}
