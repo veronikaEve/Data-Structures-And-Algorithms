@@ -10,12 +10,8 @@ int main() {
 
 	getAndStoreData(heroList, filename);
 
-	cout << "1️⃣ Length of list is: " << heroList->size << endl;
-	/* Sort the above created Linked List */
+	mergeSort(&heroList->first); // passes in the address of heroList.first
 
-	mergeSort(heroList->first);
-
-	cout << endl;
 	heroList->Display();
 
 }
