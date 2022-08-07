@@ -1,11 +1,8 @@
 //	Function to get the middle element of the linked list
-/* Split the given list into front and back halves,
-    and return the two lists using the reference parameters.
-    If the size of the list is odd, then extra element goes in the first list.
-    Uses the fast/slow pointer strategy. */
-
+//  Splits the given list into front and back halves, and returns the two lists using the reference parameters.
+//  Uses the fast/slow pointer strategy.
 Hero *getMiddleElement(Hero* head, Hero** frontRef, Hero** backRef) {
-	// Creating two reference for the linked list
+	// Creating the two references for the linked list
 	Hero *slow = head; // Slow Reference
 	Hero *fast = head->next; // Fast Reference
 
@@ -35,7 +32,7 @@ Hero *mergeSortedList(Hero* left, Hero* right) {
 		return left;
 
 	// Compare values and calls itself with the next set of values. Recursive strategy
-	if (left->getAttribute() <= right->getAttribute()) {
+	if (compareElements(left->getAttribute(), right->getAttribute())) {
 		result = left;
 		result->next = mergeSortedList(left->next, right);
 	}

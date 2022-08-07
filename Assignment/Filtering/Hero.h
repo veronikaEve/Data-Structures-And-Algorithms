@@ -1,14 +1,11 @@
-#include <iostream>
-
-using namespace std;
-
 class Hero {
 public:
 	Hero *next;
-	map<string, string> details;
+	map<string, string> details; // store the hero details in a map - with a string based key-value pair
 
 	~Hero() {}
 
+//	Hero constructor
 	Hero(string name, string gender, string eyeColour, string race, string hairColour, string height, string
 	publisher, string skinColour, string alignment, string weight) {
 		details["name"] = name;
@@ -23,10 +20,12 @@ public:
 		details["weight"] = weight;
 	}
 
+//	Returns the user chosen attribute of the hero
 	string getAttribute() {
-		return details[userChoice];
+		return details[sortChoice];
 	}
 
+//	Display the details of the hero
 	void Display() {
 		cout
 		<< "Name: " << details["name"] << " | "

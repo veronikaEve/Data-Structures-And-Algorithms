@@ -4,8 +4,12 @@
 #include <vector>
 #include <sstream>
 #include <map>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
-string userChoice;
+static string sortChoice;
+static string sortType;
+
 
