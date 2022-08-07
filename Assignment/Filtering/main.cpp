@@ -8,7 +8,7 @@ int main() {
 	HeroList *heroList = new HeroList;
 
 //	Retrieve data from the provided csv file
-	getAndStoreData(heroList, "../heroes_information.csv");
+	readAndStoreData(heroList, "../heroes_information.csv");
 
 //	Get user input for which hero detail to sort for
 	cout << "Please choose what you want to sort by!" << endl;
@@ -26,5 +26,16 @@ int main() {
 //  Display the sorted values
 	heroList->Display();
 
+	string shouldWriteToFile;
+	cout << "Do you want to export your newly sorted list into a new csv file? Type yes or no" << endl;
+	cin >> shouldWriteToFile;
+
+	if (shouldWriteToFile == "yes") {
+		string outputFileName;
+		cout << "Please enter the file name you want to create" << endl;
+		cin >> outputFileName;
+
+		writeToCSV(heroList->first, outputFileName);
+	}
 
 }

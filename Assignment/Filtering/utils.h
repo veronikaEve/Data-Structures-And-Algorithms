@@ -1,10 +1,10 @@
 //  Function for retrieving the data from the csv file
 //  Converts and adds each new Hero into the heroList linked list
-void getAndStoreData(HeroList *heroList, string fileName) {
+void readAndStoreData(HeroList *heroList, string fileName) {
 	vector<string> row; // declares a vector of strings called row where each csv element will be temporarily stored
 	string line, word;
 
-	fstream file (fileName, ios::in); // opens the file and reads from it
+	fstream file (fileName, ios::in); // opens the provided file and reads from it
 	if(file.is_open()) {
 		while(getline(file, line)){ // loops through each line of the csv file
 			row.clear(); // clears the contents of row in each iteration so it can be reused
@@ -20,6 +20,33 @@ void getAndStoreData(HeroList *heroList, string fileName) {
 	}
 	else {
 		cout<<"Could not open the file" << endl;
+	}
+}
+
+// Function for writing the sorted heroList into a new file
+// This may not end up being written in the same directory as the rest of the files.
+// For me, it created the file in my cmake-build-debug folder
+void writeToCSV(Hero *first, string fileName) {
+	fstream file(fileName+".csv", ios::out | ios::app);
+	file ? cout<< fileName+".csv was created successfully 🥳" << endl : cout<<"Could not create file 🙁" << endl;
+
+	Hero *current = first;
+	while (current != 0) {
+		// Iterating through the current.details map is possible, however the correct csv syntax could not be applied
+		// with the iteration, it unfortunately only works with hard coding every value separated with a comma apart
+		// from the last one
+		file
+			<< current->details["name"] << ","
+			<< current->details["gender"] << ","
+			<< current->details["eye colour"] << ","
+			<< current->details["race"] << ","
+			<< current->details["hair colour"] << ","
+			<< current->details["height"] << ","
+			<< current->details["publisher"] << ","
+			<< current->details["skin colour"] << ","
+			<< current->details["alignment"] << ","
+			<< current->details["weight"] << "\n";
+		current = current->next;
 	}
 }
 

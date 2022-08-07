@@ -1,7 +1,7 @@
 //	Function to get the middle element of the linked list
 //  Splits the given list into front and back halves, and returns the two lists using the reference parameters.
 //  Uses the fast/slow pointer strategy.
-Hero *getMiddleElement(Hero* head, Hero** frontRef, Hero** backRef) {
+void getMiddleElement(Hero* head, Hero** frontRef, Hero** backRef) {
 	// Creating the two references for the linked list
 	Hero *slow = head; // Slow Reference
 	Hero *fast = head->next; // Fast Reference
@@ -63,4 +63,4 @@ Hero *mergeSort(Hero **firstRef) {
 
 	// Sorted List.
 	*firstRef = mergeSortedList(frontRef, backRef);
-};
+}
