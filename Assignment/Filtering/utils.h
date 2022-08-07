@@ -38,12 +38,12 @@ void writeToCSV(Hero *first, string fileName) {
 		file
 			<< current->details["name"] << ","
 			<< current->details["gender"] << ","
-			<< current->details["eye colour"] << ","
+			<< current->details["eyecolour"] << ","
 			<< current->details["race"] << ","
-			<< current->details["hair colour"] << ","
+			<< current->details["haircolour"] << ","
 			<< current->details["height"] << ","
 			<< current->details["publisher"] << ","
-			<< current->details["skin colour"] << ","
+			<< current->details["skincolour"] << ","
 			<< current->details["alignment"] << ","
 			<< current->details["weight"] << "\n";
 		current = current->next;
@@ -64,7 +64,7 @@ bool compareElements(string left, string right) {
 // Function to store and output what options the user has to sort by
 // Options are stored in an array of strings -> easy to loop through for display purposes
 void displaySortOptions() {
-	string heroDetails[] = {"name", "gender", "eye colour", "race", "hair colour", "height", "publisher", "skin colour","alignment", "weight"};
+	string heroDetails[] = {"name", "gender", "eyecolour", "race", "haircolour", "height", "publisher", "skincolour","alignment", "weight"};
 	for (const auto &item: heroDetails){
 		cout << " | " << item;
 	}

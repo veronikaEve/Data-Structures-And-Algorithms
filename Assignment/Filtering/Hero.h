@@ -10,12 +10,12 @@ public:
 	publisher, string skinColour, string alignment, string weight) {
 		details["name"] = name;
 		details["gender"] = gender;
-		details["eye colour"] = eyeColour;
+		details["eyecolour"] = eyeColour;
 		details["race"] = race;
-		details["hair colour"] = hairColour;
+		details["haircolour"] = hairColour;
 		details["height"] = height;
 		details["publisher"] = publisher;
-		details["skin colour"] = skinColour;
+		details["skincolour"] = skinColour;
 		details["alignment"] = alignment;
 		details["weight"] = weight;
 	}
@@ -30,12 +30,12 @@ public:
 		cout
 		<< "Name: " << details["name"] << " | "
 		<< "Gender: " << details["gender"] << " | "
-		<< "Eye colour: " << details["eye colour"] << " | "
+		<< "Eye colour: " << details["eyecolour"] << " | "
 		<< "Race: " << details["race"] << " | "
-		<< "Hair colour: " << details["hair colour"] << " | "
+		<< "Hair colour: " << details["haircolour"] << " | "
 		<< "Height: " << details["height"] << " | "
 		<< "Publisher: " << details["publisher"] << " | "
-		<< "Skin colour: " << details["skin colour"] << " | "
+		<< "Skin colour: " << details["skincolour"] << " | "
 		<< "Alignment: " << details["alignment"] << " | "
 		<< "Weight: " << details["weight"] <<
 		endl;
